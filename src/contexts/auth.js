@@ -86,7 +86,7 @@ export default function AuthControl(props) {
 			 
 		
 			 if(isNewUser){
-				console.log(isNewUser);
+				
 				const selectedUserType = await promptUserType();
 				await createUserInDatabase(displayName, email, currentUser?.uid, selectedUserType);
 			 }
@@ -103,14 +103,14 @@ export default function AuthControl(props) {
 			const provider = new TwitterAuthProvider();
 			const userCredential = await signInWithPopup(auth, provider);
 			const { isNewUser } = getAdditionalUserInfo(userCredential);
-			console.log(isNewUser);
+			
 			const currentUser = userCredential.user;
-			console.log(currentUser);
+			
 			const { displayName, email, uid} = currentUser;
 			 
 		
 			 if(isNewUser){
-				console.log(isNewUser);
+				
 				const selectedUserType = await promptUserType();
 				await createUserInDatabase(displayName, email, currentUser?.uid, selectedUserType);
 			 }

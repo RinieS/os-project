@@ -41,15 +41,15 @@ const RecruiterContext = ({ children }) => {
 			const matchedProfile = recruiterMap[user?.uid];
 			setCurrentUserProfile(matchedProfile);
             
-            console.log('MATCHED PROG-> ',matchedProfile);
+           
 		}
         
        
 	};
 	const updateRecObject = async (data) => {
-		console.log('TRYING TO UPDATE', data);
+		
 		const userDocRef = doc(db, 'recruiter', data?.id);
-		console.log('userDocRef->', userDocRef);
+		
 		const userDocSnapshot = await getDoc(userDocRef);
 		if (userDocSnapshot.exists()) {
   // Update the document

@@ -96,7 +96,7 @@ export default function Search() {
               const matchingSkills = contractor.skills.filter(
                 (skill) => skill.skill === option
               );
-              console.log("matching skills ", matchingSkills );
+              
               numMatchingSkills += matchingSkills.length;
             }
           }

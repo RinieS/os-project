@@ -79,8 +79,8 @@ export default function Register({ loginPage, setLoginStep, setRegisterStep }) {
 				registerPassword,
 				userType
 			);
-			console.log(userType, registerEmail);
-			console.log('Success==> ', success);
+			
+			
 			if (!success) {
 				toast.error('The email is already in use')
 				setErroMessage('Registration Failed');

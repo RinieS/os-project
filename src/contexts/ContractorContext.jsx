@@ -42,9 +42,9 @@ const ContractorContext = ({ children }) => {
 		}
 	};
 	const updateTechObject = async (data, callback) => {
-		console.log('TRYING TO UPDATE', data);
+		
 		const userDocRef = doc(db, 'techs', data?.id);
-		console.log('userDocRef->', userDocRef);
+		
 		const userDocSnapshot = await getDoc(userDocRef);
 		if (userDocSnapshot.exists()) {
   // Update the document

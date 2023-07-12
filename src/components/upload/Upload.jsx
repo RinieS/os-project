@@ -26,13 +26,13 @@ export default function Upload({ setImgUrl, imgUrl }) {
 			id: currentUserProfile?.id,
 			profileImg: url || currentUserProfile?.profileImg,
 		};
-		console.log(data);
+		
 		updateTechObject(data);
 	};
 
 	const handleSubmitFile = (e) => {
 		e.preventDefault();
-		console.log('!!!', file);
+		
 		if (!file) return;
 		const storageRef = ref(store, `files/${uuidv4() + file.name}`);
 		const uploadTask = uploadBytesResumable(storageRef, file);

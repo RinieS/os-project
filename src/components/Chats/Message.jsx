@@ -2,7 +2,7 @@ import { authContext } from '../../contexts/auth';
 const Message = ({ message }) => {
     const { currentUser } = authContext();
   
-    console.log(message)
+    
     return (
       <div>
         <div className={`chat ${message.uid === currentUser.uid ? "chat-end" : "chat-start"}`}>

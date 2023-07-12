@@ -21,7 +21,7 @@ export default function ContractorCard({ data }) {
             <img src={Avatar} alt="Avatar" />
           )}
         </div>
-        <h1 onClick={() => console.log(data?.name)}>
+        <h1 onClick={() => console.log(" ")}>
           {data?.firstName}&nbsp;{data?.lastName}
         </h1>
         <h3>{data?.qualification}</h3>

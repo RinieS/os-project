@@ -76,7 +76,7 @@ export default function RecruiterProfileForm(props) {
 			
 			
 		};
-		console.log(data);
+		
 		updateRecObject(data, () => {
 			
 			navigate('/myProfile');

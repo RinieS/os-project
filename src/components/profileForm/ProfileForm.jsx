@@ -99,7 +99,7 @@ export default function ProfileForm(props) {
 			
 			
 		};
-		console.log(data);
+		
 		updateTechObject(data, () => {
 			
 			navigate('/myProfile');
