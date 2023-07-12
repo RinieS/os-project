@@ -4,7 +4,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./styles/app.css";
 import {
-  MyChat,
   Home,
   NotFound,
   UpdateProfile,
@@ -44,7 +43,6 @@ function App() {
                   <Route path="/search" element={<Search />} />
                   <Route path="/UpdateProfile" element={<UpdateProfile />} />
                   <Route path="/About" element={<About />} />
-                  <Route path="/chat" element={<MyChat/>} />
                 </Routes>
               </ScrollToTop>
             </Router>
