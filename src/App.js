@@ -11,7 +11,7 @@ import {
   MyProfile,
   Login,
   About
- 
+
 } from "./pages";
 import ContractorContext from "./contexts/ContractorContext";
 import ContractorProfile from "./components/ContractorProfile/ContractorProfile";
